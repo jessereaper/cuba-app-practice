@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cuba (3.9.2)
+      rack (>= 1.6.0)
+    rack (2.0.3)
+    sqlite3 (1.3.13)
+    tilt (2.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba
+  sqlite3
+  tilt
+
+RUBY VERSION
+   ruby 2.5.0p0
+
+BUNDLED WITH
+   1.16.1
