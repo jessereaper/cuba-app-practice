@@ -1,0 +1,14 @@
+<h1>All My Students</h1>
+<ul>
+  <% students.each do |student| %>
+    <li>
+      <a href="mailto:<%= student[:email] %>"><%= student[:name] %></a>
+      (<%= student[:discord] %>)
+
+      <form action="/delete/<%= student[:id] %>" method="post" class="delete">
+        <input type="submit" value="delete">
+      </form>
+    </li>
+  <% end %>
+</ul>
+<p><a href="/new">Add new</a></p>
