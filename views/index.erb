@@ -1,14 +1,17 @@
-<h1>All My Students</h1>
-<ul>
-  <% students.each do |student| %>
-    <li>
-      <a href="mailto:<%= student[:email] %>"><%= student[:name] %></a>
-      (<%= student[:discord] %>)
+ <h1>this isint working :D!</h1>
+<p>The time is <%= Time.now %></p>
 
-      <form action="/delete/<%= student[:id] %>" method="post" class="delete">
+<h1>videogames</h1>
+<ul>
+  <% videogames.each do |videogame| %>
+    <li>
+      <%= videogame[:name] %>
+      <%= videogame[:rating] %>
+      (<%= videogame[:console] %>)
+      <form action="/delete/<%= videogame[:id] %>" method="post" class="delete">
         <input type="submit" value="delete">
       </form>
     </li>
   <% end %>
 </ul>
-<p><a href="/new">Add new</a></p>
+<p><a href="/new">Add your favorit video games here :P</a></p>
